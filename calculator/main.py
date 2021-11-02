@@ -1,31 +1,25 @@
 """ This is the increment function"""
-
-
 class Calculator:
     """ This is the Calculator class"""
 
-    result = 0
+    history = []
 
-    def get_result(self):
-        """ Get Result of Calculation"""
-        return self.result
-
-    def add_number(self, value_a):
+    @staticmethod
+    def add_number(value_a, value_b):
         """ adds number to result"""
-        self.result = self.result + value_a
-        return self.result
+        return value_a + value_b
 
-    def subtract_number(self, value_a):
+    @staticmethod
+    def subtract_number(value_a, value_b):
         """ subtract number from result"""
-        self.result = self.result - value_a
-        return self.result
+        return value_a - value_b
 
-    def multiply_numbers(self, value_a, value_b):
+    @staticmethod
+    def multiply_numbers( value_a, value_b):
         """ multiply two numbers and store the result"""
-        self.result = value_a * value_b
-        return self.result
+        return value_a * value_b
 
-    def divide_numbers(self, value_a, value_b):
+    @staticmethod
+    def divide_numbers( value_a, value_b):
         """ divide two numbers and store the result"""
-        self.result = value_a / value_b
-        return self.result
+        return value_a / value_b
